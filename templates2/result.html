@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #ff7e5f, #feb47b, #ff6f61, #d76d77, #3a7bd5, #00d2d3);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-size: 200% 200%;
+        animation: gradientAnimation 15s ease infinite;
+    }
+    
+    @keyframes gradientAnimation {
+        0% {
+            background-position: 0% 0%;
+        }
+        50% {
+            background-position: 100% 100%;
+        }
+        100% {
+            background-position: 0% 0%;
+        }
+    }
+    
+    .container {
+        background: rgba(255, 255, 255, 0.395);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        width: 320px;
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    
+    p {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+    
+    a {
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 4px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    
+    a:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>Closest Pair Results</h1>
+        <p>The pair with the sum closest to zero is: {{ pair[0] }}, {{ pair[1] }}</p>
+        <a href="/">Go Back</a>
+    </div>
+</body>
+
+</html>

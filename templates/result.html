@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratings Result</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #ff7e5f, #feb47b, #ff6f61, #d76d77, #3a7bd5, #00d2d3);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-size: 200% 200%;
+        animation: gradientAnimation 15s ease infinite;
+    }
+    
+    @keyframes gradientAnimation {
+        0% {
+            background-position: 0% 0%;
+        }
+        50% {
+            background-position: 100% 100%;
+        }
+        100% {
+            background-position: 0% 0%;
+        }
+    }
+    
+    .container {
+        background: rgba(255, 255, 255, 0.395);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        width: 320px;
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    
+    p {
+        font-size: 16px;
+        color: #555;
+        margin: 10px 0;
+    }
+    
+    a {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #007bff;
+        border-radius: 4px;
+    }
+    
+    a:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>Ratings Results</h1>
+        <p>Rating 1 (Chef 1): {{ rating1 }}</p>
+        <p>Rating 2 (Chef 2): {{ rating2 }}</p>
+        <p>Rating List: {{ rating_list }}</p>
+        <a href="/">Go Back</a>
+    </div>
+</body>
+
+</html>
